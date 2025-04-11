@@ -12,11 +12,13 @@ if (!function_exists('str_ends_with')):
   function str_ends_with(string $haystack, string $needle): bool
   {
     // From: https://github.com/symfony/polyfill-php80/blob/1.x/Php80.php
-    if ('' === $needle || $needle === $haystack) {
+    if ('' === $needle || $needle === $haystack)
+    {
       return true;
     }
 
-    if ('' === $haystack) {
+    if ('' === $haystack)
+    {
       return false;
     }
 

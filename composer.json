@@ -1,0 +1,39 @@
+{
+  "name": "deviscoding/html-objects",
+  "description": "HTML Object library for PHP",
+  "keywords": [
+    "php",
+    "object",
+    "html",
+    "html attribute",
+    "js",
+    "css"
+  ],
+  "homepage": "https://www.github.com/jonesiscoding/html-objects",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Aaron M Jones",
+      "homepage": "http://www.deviscoding.com"
+    }
+  ],
+  "type": "library",
+  "license": "LGPL-2.1",
+  "autoload": {
+    "files": [
+      "src/Polyfill/is_countable.php",
+      "src/Polyfill/str_starts_with.php",
+      "src/Polyfill/str_ends_with.php",
+      "src/Polyfill/Stringable.php"
+    ],
+    "psr-4": {
+      "DevCoding\\Html\\": "src"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "ext-intl": "*",
+    "ext-simplexml": "*",
+    "psr/container": "^2.0"
+  }
+}
